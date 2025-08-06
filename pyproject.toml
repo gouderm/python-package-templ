@@ -1,0 +1,20 @@
+[project]
+name = "project_name"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.13"
+
+[dependency-groups]
+dev = [
+    "docformatter>=1.7.7",
+    "pre-commit>=4.2.0",
+    "pyright>=1.1.403",
+    "pytest>=8.4.1",
+    "ruff>=0.12.7",
+]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+
+[tool.ruff.format]
+docstring-code-format = true
